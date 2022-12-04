@@ -14,10 +14,8 @@ function App() {
         <Header/>
         <div className='container'>
           <Routes>
-            {/* <Route path='/' element = {<ListEmployee/>}/> */}
-            <Route path='/' element = {<CreateEmployee/>}/>
-            <Route path='/employee' element = {<ListEmployee/>}/>
-            {/* <Route path='/add-employee' element = {<CreateEmployee/>}/> */}
+            <Route path='/' element = {<ListEmployee/>}/>
+            <Route path='/add-employee' element = {<CreateEmployee/>}/>
             {/* <Route path='/add-employee/_add' element = {<CreateEmployee/>}/> */}
             <Route path='/view-employee/:id' element = {<ViewEmployee/>}/>
           </Routes>
