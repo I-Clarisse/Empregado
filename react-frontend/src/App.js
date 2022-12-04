@@ -16,7 +16,6 @@ function App() {
           <Routes>
             <Route path='/' element = {<ListEmployee/>}/>
             <Route path='/add-employee' element = {<CreateEmployee/>}/>
-            {/* <Route path='/add-employee/_add' element = {<CreateEmployee/>}/> */}
             <Route path='/view-employee/:id' element = {<ViewEmployee/>}/>
           </Routes>
         </div>
