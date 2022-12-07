@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-// import useFetch from "../../hooks/useFetch";
 import EmployeeService from '../../services/EmployeeService'
 import './ListEmployees.css'
-// import {Link} from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 // import {BiSearch} from 'react-icons/bi'
 
 class ListEmployee extends Component{
@@ -12,8 +11,6 @@ class ListEmployee extends Component{
         this.state = {
             employees: []
         }
-
-        this.addEmployee = this.addEmployee.bind(this);
         this.editEmployee = this.editEmployee.bind(this);
         this.deleteEmployee = this.deleteEmployee.bind(this)
     }
@@ -38,18 +35,13 @@ class ListEmployee extends Component{
         });
     }
 
-
-    addEmployee(){
-        this.props.history.push(`/add-employee?id=_add`);
-    }
-
     render() {
         return(
             <div>
                 <h2 className="text-center">LIST OF ALL EMPLOYEES</h2>
                 <div className="row row-1">
                     <input type="search" placeholder="Search employee..." className="form-control search"/>
-                    <button className="btn btn-primary" onClick={this.addEmployee}>Add new employee</button>
+                    <NavLink className="btn btn-primary" to='/add-employee'>Add new employee</NavLink>
                 </div>
                 <br />
                 <div className="row">
