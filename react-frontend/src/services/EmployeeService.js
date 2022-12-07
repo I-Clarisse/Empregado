@@ -1,27 +1,27 @@
 import axios from "axios";
 
-const EMPLOYEE_API_BASE_URL = "http://localhost:8080/api/employee/"
+const EMPLOYEE_API_BASE_URL = "http://localhost:8080/api/employee"
 
 class EmployeeService{
 
     getEmployees() {
-        return axios.get(EMPLOYEE_API_BASE_URL);
+        return axios.get("http://localhost:8080/api/employee");
     }
 
     createEmployee(employee){
         return axios.post(EMPLOYEE_API_BASE_URL, employee);
     }
 
-    getEmployeeById(employeeId){
-        return axios.get(EMPLOYEE_API_BASE_URL + '/' + employeeId);
+    getEmployeeById(id){
+        return axios.get(EMPLOYEE_API_BASE_URL + '/' + id);
     }
 
-    updateEmployee(employee, employeeId){
-        return axios.put(EMPLOYEE_API_BASE_URL + '/' + employeeId, employee);
+    updateEmployee(employee, id){
+        return axios.put(EMPLOYEE_API_BASE_URL + '/' + id, employee);
     }
 
-    deleteEmployee(employeeId){
-        return axios.delete(EMPLOYEE_API_BASE_URL + '/' + employeeId);
+    deleteEmployee(id){
+        return axios.delete(EMPLOYEE_API_BASE_URL + '/' + id);
     }
 
 }
