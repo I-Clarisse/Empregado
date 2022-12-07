@@ -1,0 +1,58 @@
+.container form{
+    height:60%;
+    border-radius: 5px;
+    box-shadow:2px 2px 2px 1px #DEDDDD;
+    background-color: #FCFCFC;
+    padding: 10px 50px;
+    margin-top: 90px;
+}
+
+form h1{
+    color: #214362;
+    padding: 20px 20px;
+    font-size: 20px;
+    margin-top: 10px !important;
+}
+.card{
+    background-color: FCFCFC;
+    height: 25% !important;
+}
+
+label{
+    color: #BDBCBC;
+}
+
+.container .form-group .form-control{
+    background-color: #D4E4E7;
+    border: none;
+    width: 95% !important;
+}
+
+.save{
+    background-color: #214362;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.cancel{
+    border: 1px solid #214362 !important;
+    color: #214362 !important;
+    font-weight: bold;
+}
+.save:hover{
+    color: #214362;
+    border: 1px solid #214362;
+    font-weight: bold;
+}
+
+.cancel:hover{
+    color: #FFFFFF !important;
+    background-color: #214362;
+    font-weight: bold;
+}
+
+.message {
+    font-size: 1.2em;
+    text-align: center;
+    color: #36a936;
+}
