@@ -73,28 +73,6 @@ class CreateEmployee extends Component {
         }
     }
     
-    // handleSubmit = (event) => {
-    //     alert('Form was submitted: ' + this.state);
-    //     let employee = {firstName: this.state.firstName,
-    //         lastName: this.state.lastName,
-    //         email: this.state.email};
-
-    //     fetch('http://localhost:8080/api/employee',{
-    //         method: 'POST',
-    //         headers: {
-    //             "Content-Type": 'application/json'
-    //         },
-    //         body: JSON.stringify(employee),
-    //         "Access-Control-Allow-Origin": "*",
-    //         credentials: 'include'
-    //     }).then((res) => {
-    //         console.log('employee => ' +JSON.stringify(employee));
-    //         this.props.history.push('/employee');
-    //         return res.json;
-    //     }).then((res) => res.json());
-    //     event.preventDefault();
-    // }
-
     handleSubmit = async (e) => {
         e.preventDefault();
 
