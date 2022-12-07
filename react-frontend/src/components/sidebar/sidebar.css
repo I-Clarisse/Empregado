@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Open Sans', sans-serif; */
+}
+
+.wrapper .sidebar{
+    background-color: #214362;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+.logo{
+    color: #4BB1B1;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    margin-left: 12px;
+}
+
+.wrapper .sidebar ul{
+    font-size: 18px;
+    margin-top: 100px;
+}
+
+.wrapper .sidebar ul li{
+    margin-left: -40px;
+}
+
+.wrapper .sidebar ul li {
+    display: block;
+    padding: 13px 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+    position: relative;
+    text-decoration: none;
+}
+
+.wrapper .sidebar ul li .item{
+    /* display: inline-block; */
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.wrapper .sidebar ul li .icon{
+    color: #FFFFFF;
+    width: 30px;
+    display: inline-block;
+}
+
+.wrapper .sidebar ul li:hover,
+.wrapper .sidebar ul li.active{
+    background-color: #0B2135;
+}
+
+li.active{
+    background-color: #0B2135;
+}
