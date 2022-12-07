@@ -29,11 +29,11 @@ thead{
 }
 
 tbody tr:nth-child(even){
-    background-color: D9D9D9;
+    background-color: #D9D9D9;
 }
 
 tbody tr:nth-child(odd){
-    background-color: E5E5E5;
+    background-color: #E5E5E5;
 }
 
 table{
@@ -54,4 +54,18 @@ table{
 }
 .btn{
     color: #FFFFFF;
+}
+.delete:hover{
+    color: #BA1922;
+    border: 1px solid #BA1922;
+}
+
+.view:hover{
+    color: #2142F4;
+    border: 1px solid #2142F4;
+}
+
+.update:hover{
+    color: #149A11;
+    border: 1px solid #149A11;
 }
