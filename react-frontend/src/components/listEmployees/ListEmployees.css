@@ -1,0 +1,57 @@
+h2{
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+.row{
+    width: 93%;
+    margin-left: 120px;
+}
+
+.row-1{
+    display: flex;
+    gap: 5;
+}
+.search{
+    width: 25% !important;
+}
+
+.btn-primary{
+    width: 17%;
+    position: relative;
+    background-color: #2142F4;
+    margin-left: 600px;
+}
+
+thead{
+    background-color: #214362;
+    color: #FFFFFF;
+}
+
+tbody tr:nth-child(even){
+    background-color: D9D9D9;
+}
+
+tbody tr:nth-child(odd){
+    background-color: E5E5E5;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+.delete{
+    background-color: #BA1922;
+
+}
+
+.update{
+    background-color: #149A11;
+}
+
+.view{
+    background-color: #2142F4;
+}
+.btn{
+    color: #FFFFFF;
+}
