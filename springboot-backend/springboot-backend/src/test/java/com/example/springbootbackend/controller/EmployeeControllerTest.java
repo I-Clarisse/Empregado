@@ -97,7 +97,7 @@ public class EmployeeControllerTest {
         when(employeeServiceMock.getAll()).thenReturn(listOfEmployees);
 
         MockHttpServletRequestBuilder request = MockMvcRequestBuilders
-                .get("/api/employee/")
+                .get("/api/employee  /")
                 .accept(MediaType.APPLICATION_JSON);
 
         MvcResult result =mockMvc
